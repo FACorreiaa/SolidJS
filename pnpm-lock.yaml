@@ -4,6 +4,7 @@ specifiers:
   solid-js: ^1.6.10
   vite: ^4.1.1
   vite-plugin-solid: ^2.5.0
+  workbox-window: ^6.5.4
 
 dependencies:
   solid-js: 1.6.10
@@ -11,6 +12,7 @@ dependencies:
 devDependencies:
   vite: 4.1.1
   vite-plugin-solid: 2.5.0_solid-js@1.6.10+vite@4.1.1
+  workbox-window: 6.5.4
 
 packages:
 
@@ -565,6 +567,10 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@types/trusted-types/2.0.3:
+    resolution: {integrity: sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==}
+    dev: true
+
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
@@ -930,6 +936,17 @@ packages:
         optional: true
     dependencies:
       vite: 4.1.1
+    dev: true
+
+  /workbox-core/6.5.4:
+    resolution: {integrity: sha512-OXYb+m9wZm8GrORlV2vBbE5EC1FKu71GGp0H4rjmxmF4/HLbMCoTFws87M3dFwgpmg0v00K++PImpNQ6J5NQ6Q==}
+    dev: true
+
+  /workbox-window/6.5.4:
+    resolution: {integrity: sha512-HnLZJDwYBE+hpG25AQBO8RUWBJRaCsI9ksQJEp3aCOFCaG5kqaToAYXFRAHxzRluM2cQbGzdQF5rjKPWPA1fug==}
+    dependencies:
+      '@types/trusted-types': 2.0.3
+      workbox-core: 6.5.4
     dev: true
 
   /yallist/3.1.1:
